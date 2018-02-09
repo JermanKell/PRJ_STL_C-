@@ -7,11 +7,11 @@ using namespace std;
 Patient::Patient() {
 }
 
-Patient::Patient(string pr, string nm, string add, string city) {
+Patient::Patient(string pr, string nm, int time, int priority) {
 	FName = pr;
 	LName = nm;
-	Add = add;
-	City = city;
+	DTime = time;
+	Prio = priority;
 }
 
 Patient::~Patient() {

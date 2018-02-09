@@ -24,12 +24,25 @@ private:
 
 public:
 	Patient();
-	Patient(string pr, string nm, string add, string city);
+	Patient(string pr, string nm, int time, int priority);
 	~Patient();
 
 	void getPIdentity(void); // Patient Identity
 	void getCDetails(void); // Contact details
 	void getPMFile(void); // Patient Medical File
+
+	inline string getName(void) {
+		return LName;
+	}
+	inline string getFName(void) {
+		return FName;
+	}
+	inline int getPrio(void) {
+		return Prio;
+	}
+	inline int getDureeCons(void) {
+		return DTime;
+	}
 
 	void setCDetails(string add, string city, int postcode, int phoneNb);
 	void setPMFile(string disease, int priority);
