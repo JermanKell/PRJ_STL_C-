@@ -10,25 +10,28 @@ using namespace std;
 
 class Patient_PRJ {
 private:
-	vector<Patient> PVec;
 	std::ostream & os;
 
-	int var;
-	int tailleVec;
-	int Prio;
+	int totalPatient;
+	int SommePrio;
 	int durCons;
 
 public:
-	Patient_PRJ(std::ostream &out, vector<Patient> vec, int taille) : os(out), PVec(vec),
-		var(0), tailleVec(taille), Prio(0), durCons(0)
+	Patient_PRJ(std::ostream &out) : os(out), totalPatient(0), SommePrio(0), durCons(0)
 		{}
 	void operator()(Patient patient) {
 		os << "Patient:\t" << patient.getFName() << "\t" << patient.getName() << endl;
-		Prio += patient.getPrio();
+		totalPatient++;
+		SommePrio += patient.getPrio();
 		durCons += patient.getDureeCons();
-		
-		if (var == tailleVec)
-			Prio = Prio / 2;
+	}
+
+	double getMoyennePriorite() {
+		return (double)SommePrio / (double)totalPatient;
+	}
+
+	int getDureeTotalConsultation() {
+		return durCons;
 	}
 
 	~Patient_PRJ() {
