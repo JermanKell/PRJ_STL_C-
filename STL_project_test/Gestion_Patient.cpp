@@ -14,7 +14,7 @@ Gestion_Patient::~Gestion_Patient() {
 }
 
 void Gestion_Patient::Ecriture() {
-	for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout, VPat, VPat.size()));
+	for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout, VPat.size()));
 }
 
 void Gestion_Patient::AjouterPatient(Patient pat) {
