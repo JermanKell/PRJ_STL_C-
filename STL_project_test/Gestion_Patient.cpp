@@ -14,7 +14,12 @@ Gestion_Patient::~Gestion_Patient() {
 }
 
 void Gestion_Patient::Ecriture() {
+<<<<<<< HEAD
 	for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout, VPat.size()));
+=======
+	Patient_PRJ foncteurPatient = for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout));
+	cout << "Priorite moyenne = " << foncteurPatient.getMoyennePriorite() << endl << "Somme totale des durees de consultations = " << foncteurPatient.getDureeTotalConsultation() << endl;
+>>>>>>> d0b65432947b3b359f92d36a60a0537288d486af
 }
 
 void Gestion_Patient::AjouterPatient(Patient pat) {

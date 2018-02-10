@@ -153,6 +153,7 @@
     <ClInclude Include="Gestion_Patient.h" />
     <ClInclude Include="MultiString.h" />
     <ClInclude Include="Patient.h" />
+    <ClInclude Include="RendezVous.h" />
     <ClInclude Include="S_coord.h" />
     <ClInclude Include="VecInt.h" />
     <ClInclude Include="stdafx.h" />
@@ -162,6 +163,7 @@
     <ClCompile Include="Gestion_Patient.cpp" />
     <ClCompile Include="MultiString.cpp" />
     <ClCompile Include="Patient.cpp" />
+    <ClCompile Include="RendezVous.cpp" />
     <ClCompile Include="S_Coord.cpp" />
     <ClCompile Include="VecInt.cpp" />
     <ClCompile Include="stdafx.cpp" />
