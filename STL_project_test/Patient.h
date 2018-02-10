@@ -30,8 +30,9 @@ public:
 	void getPIdentity(void); // Patient Identity
 	void getCDetails(void); // Contact details
 	void getPMFile(void); // Patient Medical File
+	void getListResources(void); //List of ids resources
 
-	inline string getName(void) {
+	inline string getLName(void) {
 		return LName;
 	}
 	inline string getFName(void) {
@@ -43,9 +44,13 @@ public:
 	inline int getDureeCons(void) {
 		return DTime;
 	}
+	inline vector<int> & getVecId(void) {
+		return IVec;
+	}
 
 	void setCDetails(string add, string city, int postcode, int phoneNb);
 	void setPMFile(string disease, int priority);
+	void setResource(int id);
 };
 
 

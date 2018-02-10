@@ -42,15 +42,16 @@
     <ClInclude Include="Gestion_Patient.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="RendezVous.h">
+=======
+    <ClInclude Include="FoncteurTrieRessource.h">
+>>>>>>> 38dbfb598b13ba977d95b95c083041c970331855
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="STL_project_test.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="VecInt.cpp">
@@ -68,7 +69,11 @@
     <ClCompile Include="Gestion_Patient.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="RendezVous.cpp">
+=======
+    <ClCompile Include="main.cpp">
+>>>>>>> 38dbfb598b13ba977d95b95c083041c970331855
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

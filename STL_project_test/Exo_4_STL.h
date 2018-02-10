@@ -19,8 +19,8 @@ private:
 public:
 	Patient_PRJ(std::ostream &out) : os(out), totalPatient(0), SommePrio(0), durCons(0)
 		{}
-	void operator()(Patient patient) {
-		os << "Patient:\t" << patient.getFName() << "\t" << patient.getName() << endl;
+	void operator()(Patient & patient) {
+		os << "Patient:\t" << patient.getFName() << "\t" << patient.getLName() << endl;
 		totalPatient++;
 		SommePrio += patient.getPrio();
 		durCons += patient.getDureeCons();
