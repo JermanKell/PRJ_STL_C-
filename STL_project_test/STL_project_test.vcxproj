@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exo_4_STL.h" />
+    <ClInclude Include="FoncteurTrieRessource.h" />
     <ClInclude Include="Gestion_Patient.h" />
     <ClInclude Include="MultiString.h" />
     <ClInclude Include="Patient.h" />
@@ -165,7 +166,7 @@
     <ClCompile Include="S_Coord.cpp" />
     <ClCompile Include="VecInt.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="STL_project_test.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

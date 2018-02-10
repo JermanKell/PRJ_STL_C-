@@ -12,7 +12,9 @@ public:
 	~Gestion_Patient();
 
 	void Ecriture(void);
+	void TrierIdRessourcePatient(void);
 	void AjouterPatient(Patient pat);
+	inline vector<Patient> getVectorPatient(void) { return VPat; };
 };
 
 #endif DEF__GESTION_PATIENT_H
