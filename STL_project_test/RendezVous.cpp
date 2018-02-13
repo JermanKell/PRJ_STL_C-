@@ -4,9 +4,18 @@ RendezVous::RendezVous() {
 	patient = nullptr;
 	rdvPrec = nullptr;
 	rdvSuiv = nullptr;
-	Ressouce = 0;
+	rdvResPrec = nullptr;
+	rdvResSuiv = nullptr;
+	Ressource = 0;
+	HeureRDV = 0;
+	dRDV = 0;
 }
 
+RendezVous::RendezVous(int ressource, int duree, Patient & pat) {
+	patient = &pat;
+	Ressource = ressource;
+	dRDV = duree;
+}
 RendezVous::~RendezVous() {
 	delete patient;
 	delete rdvPrec;
@@ -35,4 +44,12 @@ RendezVous & RendezVous::getRdvPrec() {
 
 RendezVous & RendezVous::getRdvSuiv() {
 	return *rdvSuiv;
+}
+
+int RendezVous::getHeureRDV() {
+	return HeureRDV;
+}
+
+void RendezVous::setHeureRDV(int heure) {
+	HeureRDV = heure;
 }

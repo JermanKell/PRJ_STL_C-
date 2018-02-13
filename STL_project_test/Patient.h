@@ -19,6 +19,7 @@ private:
 	int pCode;
 	int DTime;
 	int Prio;
+	int IndPrio;
 
 	vector<int> IVec;
 
@@ -48,9 +49,28 @@ public:
 		return IVec;
 	}
 
+	inline int getPrio(void) {
+		return Prio;
+	}
+
+	inline int getIndPrio(void) {
+		return IndPrio;
+	}
+
+	inline int getResource(void) {
+		return 
+	}
+
 	void setCDetails(string add, string city, int postcode, int phoneNb);
 	void setPMFile(string disease, int priority);
 	void setResource(int id);
+	inline void setPrio(int prio) {
+		Prio = prio;
+	}
+	inline void setIndPrio(int Indprio) {
+		IndPrio = Indprio;
+	}
+
 };
 
 

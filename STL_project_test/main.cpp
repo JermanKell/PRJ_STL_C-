@@ -29,15 +29,12 @@ int main()
 	Gestion_Patient  gestion = Gestion_Patient();
 
 	for (uiBoucle = 0; uiBoucle < 4; uiBoucle++) {
-<<<<<<< HEAD:STL_project_test/STL_project_test.cpp
 		Patient pat = Patient("bob" + std::to_string(uiBoucle), "marley" + std::to_string(uiBoucle), uiBoucle, uiBoucle + 1);
-=======
-		Patient  pat = Patient("bob" + std::to_string(uiBoucle), "marley" + std::to_string(uiBoucle), uiBoucle, uiBoucle + 1);
+
 		//Générer 30 ressources aléatoires
 		for (unsigned int uiBoucle2 = 0; uiBoucle2 < 30; uiBoucle2++) {
 			pat.setResource(dist(mt));
 		}
->>>>>>> 38dbfb598b13ba977d95b95c083041c970331855:STL_project_test/main.cpp
 		gestion.AjouterPatient(pat);
 	}
 

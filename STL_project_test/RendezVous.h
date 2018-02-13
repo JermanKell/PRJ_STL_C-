@@ -11,30 +11,51 @@ private:
 	Patient * patient;
 
 	/*
-		Pointeur sur l'objet RDV précédent celui la
-			=> création du chainage
+		Rendez-vous précédent pour le patient
 	*/
 	RendezVous * rdvPrec;
 
 	/*
-		Pointeur sur l'objet RDV suivant celui la 
-			=> suite du chainage
+		Rendez-vous suivant pour le patient
 	*/
 	RendezVous * rdvSuiv;
 
-	int Ressouce;
+	/*
+		Rendez-vous précédent pour la ressource (planning)
+	*/
+	RendezVous * rdvResPrec;
+
+	/*
+		Rendez-vous suivant pour la ressource (planning)
+	*/
+	RendezVous * rdvResSuiv;
+
+	/*
+		Valeur max de la ressource 
+			=> faire un for
+	*/
+	int Ressource;
+
+	/*
+		Heure du RDV fixé
+	*/
+	int HeureRDV;
+	int dRDV;
 
 public:
 	RendezVous();
+	RendezVous(int ressource, int duree, Patient & pat);
 	~RendezVous();
 
 	void setPatient(Patient * pat);
 	void setRdvPrec(RendezVous * rdvPrecedent);
 	void setRdvSuiv(RendezVous * rdvSuivant);
+	void setHeureRDV(int heure);
 
 	RendezVous & getRdvPrec(void);
 	RendezVous & getRdvSuiv(void);
 	Patient & getPatient(void);
+	int getHeureRDV(void);
 
 };
 

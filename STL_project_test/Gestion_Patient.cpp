@@ -15,12 +15,9 @@ Gestion_Patient::~Gestion_Patient() {
 }
 
 void Gestion_Patient::Ecriture() {
-<<<<<<< HEAD
-	for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout, VPat.size()));
-=======
+	for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout));
 	Patient_PRJ foncteurPatient = for_each(VPat.begin(), VPat.end(), Patient_PRJ(cout));
 	cout << "Priorite moyenne = " << foncteurPatient.getMoyennePriorite() << endl << "Somme totale des durees de consultations = " << foncteurPatient.getDureeTotalConsultation() << endl;
->>>>>>> d0b65432947b3b359f92d36a60a0537288d486af
 }
 
 void Gestion_Patient::TrierIdRessourcePatient() {
@@ -31,4 +28,13 @@ void Gestion_Patient::TrierIdRessourcePatient() {
 
 void Gestion_Patient::AjouterPatient(Patient pat) {
 	VPat.push_back(pat);
+}
+
+void Gestion_Patient::TriParPrio(void) {
+	sort(VPat.begin(), VPat.end(), Gestion_Patient::);
+}
+
+bool Gestion_Patient::Tri(Patient & patient1, Patient & patient2) {
+	int indPrio1 = (patient1.getPrio() * 100) + (patient1.)
+	patient1.setIndPrio()
 }
